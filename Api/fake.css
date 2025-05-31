@@ -1,0 +1,18 @@
+body{
+    padding: 4rem;
+}
+
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.card {
+  min-height: 250px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px #00000055;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  padding: 20px;
+ 
+}

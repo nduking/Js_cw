@@ -1,0 +1,35 @@
+.paragraph_title {
+  font-size: 20px;
+  font-weight: 700;
+  color: red;
+}
+
+body {
+  text-align: center;
+  padding: 2rem;
+}
+
+#card_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.card {
+  min-height: 250px;
+  border: 1px solid slategray;
+  box-shadow: 0px 0px 5px #0000006a;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 20px #000;
+}
+
+.capital {
+  text-transform: capitalize;
+  font-size: 17px;
+  color: brown;
+}
