@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding-inline: 6rem;
+  /* padding-block: auto; */
+  background: #000;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  height: auto;
+  gap: 30px;
+  margin-bottom: 30px;
+  /* padding-inline: 6rem; */
+  padding-block: 20px;
+}
+.logo_menu,
+.all_input,
+.imdb_watchlist {
+  display: flex;
+  align-items: center;
+}
+nav > div > img {
+  width: 9.5rem;
+  border-radius: 1rem;
+  margin-right: 1.5rem;
+}
+nav > div > button {
+  width: 70px;
+  height: 50px;
+}
+.menu_btn {
+  font-size: 25px;
+  width: auto;
+  padding-inline: 10px;
+  color: #fff;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.bx-menu {
+  font-size: 40px;
+}
+.all_input button {
+  font-size: 20px;
+  padding: 10px;
+  width: auto;
+  height: 40px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.bxs-down-arrow {
+  font-size: 10px;
+}
+.all_input input {
+  width: 550px;
+  height: 40px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  padding-left: 20px;
+}
+.bx-search {
+  color: grey;
+  position: absolute;
+  left: 980px;
+}
+.imdbpro_btn {
+  width: auto;
+  border: none;
+  padding-inline: 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  background: none;
+}
+.vertica {
+  height: 40px;
+  border: 2px solid grey;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.watchlist_btn {
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding-inline: 20px;
+  font-size: 25px;
+  background: none;
+  border: none;
+  color: #fff;
+  gap: 10px;
+}
+.signin_btn,
+.en_btn {
+  background: none;
+  border: none;
+  width: auto;
+  padding-inline: 1rem;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* .main{
+    background-color:#fff;
+    padding-inline: 5rem;
+} */
+.mobile_menu {
+  display: none;
+}
+
+#card_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding-inline: auto;
+}
+p, small {
+  padding-block: 10px;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding-inline: 1.5rem;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  nav > div > img {
+    width: 4.5rem;
+  }
+  .mobile_menu {
+    display: block;
+  }
+  .menu_btn,
+  .all_input,
+  .imdb_watchlist {
+    display: none;
+  }
+  #card_container {
+    grid-template-columns: repeat(1, 1fr);
+    padding-inline: auto;
+  }
+}

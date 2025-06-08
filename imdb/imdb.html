@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/imdb.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo_menu">
+          <img src="./Assets/imdb.png" alt="" />
+          <button class="menu_btn"><i class="bx bx-menu"></i>Menu</button>
+        </div>
+        <div class="all_input">
+          <button>All<i class="bx bxs-down-arrow"></i></button>
+          <input type="search" placeholder="Search IMDB" /><i
+            class="bx bx-search"
+          ></i>
+        </div>
+        <div class="imdb_watchlist">
+          <button class="imdbpro_btn">IMDbPro</button>
+          <div class="vertica"></div>
+          <button class="watchlist_btn">
+            <i class="bx bx-bookmark-plus"></i>Watchlist
+          </button>
+          <button class="signin_btn">Sign In</button
+          ><button class="en_btn">EN<i class="bx bxs-down-arrow"></i></button>
+        </div>
+        <div class="mobile_menu"><i class="bx bx-menu mobilemenu"></i></div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="card_container" id="card_container"></section>
+    </main>
+    <script src="/imdb.js"></script>
+  </body>
+</html>
